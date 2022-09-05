@@ -1,0 +1,227 @@
+.category{
+    display:flex;
+    justify-content: flex-end;
+    margin:50px 0 70px 0;
+}
+.category a{
+    padding:0 6px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.category a::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform: rotate(135deg) translate(5px,7px);
+}
+.category a:first-child::before{
+    content:'';
+    display:none;
+}
+
+#table{
+    width:calc(100% - 150px);
+    text-align: center;
+    margin:0 auto;
+    border:1px solid #aaa;     
+}
+#table td{
+    width:20%;
+    height:60px;
+    vertical-align:middle;
+    cursor: pointer;
+}
+#table .all{
+    font-weight: 400;
+}
+/* ************테이블****************** */
+
+#nike_best h2{
+    text-align: center;
+    margin:95px 0 50px 0;
+    font-size: 26px;    
+}
+.nike_best2{
+    display:flex;
+    justify-content: space-between;
+}
+ul.nike_best2 li{
+    cursor: pointer;;
+}
+ul.nike_best2 li .name{
+    margin-top:10px;    
+}
+ul.nike_best2 li p{
+    margin-left:5px;
+}
+ul.nike_best2 li .price{
+    font-weight: 400;
+}
+ul.nike_best2 li div{
+    overflow:hidden;
+}
+ul.nike_best2 li img{
+    transition: 0.3s;
+}
+ul.nike_best2 li img:hover{
+    transform:scale(1.15);
+}
+/* *************nike_best********************* */
+
+#sub_list{
+    margin-top:95px;
+}
+#sub_list .title{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+    padding-bottom: 20px;    
+}
+#sub_list .title h3{
+    font-size:20px;
+    font-weight: 400;
+}
+
+.list_new a::after{   
+    margin-left: 20px;
+    margin-right:5px;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform: rotate(225deg) translate(2px,4px);
+}
+
+ul.sub_list2{
+    margin-top:70px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+ul.sub_list2 li{
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+ul.sub_list2 li .name{
+    margin-top:10px;    
+}
+ul.sub_list2 li p{
+    margin-left:5px;
+}
+ul.sub_list2 li .price{
+    font-weight: 400;
+}
+
+#sub_list .number{
+    text-align: center;
+}
+#sub_list .number a{
+    cursor: pointer;
+    margin:50px 10px; 
+    font-size: 15px;   
+    display:inline-block;
+}
+#sub_list .number a b{   
+    background-color: #555;
+    color:#fff;
+    padding:2px 9px;
+    font-weight: 300;
+    margin:0 -7px;
+}
+
+#sub_list .number a:first-child::before{    
+    margin-right:30px;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform: rotate(315deg) translate(4px,2px);
+}
+#sub_list .number a:last-child::after{    
+    margin-left:30px;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform: rotate(135deg) translate(5px,7px);
+}
+ul.sub_list2 li div{
+    overflow:hidden;
+}
+ul.sub_list2 li img{
+    transition: 0.3s;
+}
+ul.sub_list2 li img:hover{
+    transform:scale(1.15);
+}
+/* ************************************ */
+
+@media all and (max-width:720px){
+    .category{
+      margin:40px 0 50px 0;
+    }
+    #table{
+        width:calc(100% - 20px);    
+    }
+   
+
+    #nike_best h2{
+        margin:50px 0px;    
+    }
+    .nike_best2{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    ul.nike_best2 li{
+        margin:0 5px 20px 5px;
+    }
+    ul.nike_best2 li .name{
+        margin-top:5px;    
+    }
+    ul.nike_best2 li p{
+        margin-left:5px;
+    }
+    ul.nike_best2 li img{
+        width:230px;
+    }
+ /* *************nike best******************** */
+
+    #sub_list{ 
+        margin-top:50px;
+    }  
+
+    ul.sub_list2{
+        margin-top:50px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+    ul.sub_list2 li{
+        margin:0 5px 20px 5px;
+    }
+    ul.sub_list2 li img{
+        width:230px;
+    }
+    ul.sub_list2 li .name{
+        margin-top:5px;    
+    }
+    ul.sub_list2 li.hide{
+        display:none;
+    }
+
+    #sub_list .number a{
+        margin:40px 10px;
+        margin-bottom: 20px; 
+    }   
+    
+}

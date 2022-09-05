@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브페이지</title>
+
+    <link rel="html" href="index.html">
+
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.css" class="css">
+
+    <link rel="stylesheet" href="css/common.css" class="css">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/sub.css" class="css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        $(function(){
+          $('#login_popup .close').click(function(){
+            $('#login_popup').fadeOut(300);
+          })
+          $('.login #login').click(function(){
+            $('#login_popup').fadeIn(300);
+          })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="login_popup">        
+        <form action="" method="">
+             <!--폼으로 전체 감싸기-->
+            <div class="align">   
+                <button class="close"><span></span><span></span></button>
+                  <h2>로그인</h2>    
+             <div class="box"> 
+             <div>
+                <label for="id"></label>  <!--레이블 태그는 써줘야함-->
+                <input type="text" id="id" placeholder=" 아이디">
+             </div>
+             <div>
+                 <label for="pw"></label>
+                 <input type="password" id="pw" placeholder=" 비밀번호">
+             </div>
+             <div>
+                 <input type="checkbox" checked id="id_check" value="아이디기억"><label for="id_check" id="id_check"> 아이디 저장</label>
+             </div>
+             <div>     
+                 <input type="submit" id="login_submit" value="로그인">
+             </div>
+             </div><!--box-->
+             <div id="text">
+                <a href="#">회원가입</a>
+                <a href="#">아이디찾기</a>
+                <a href="#">비밀번호찾기</a>
+             </div>
+            </div><!--aligin-->    
+                </form>     
+        </div> 
+        <!--======= login_popup ===========-->
+
+    <div id="header_top">
+        <a href="#">대행배송</a>
+        <a href="#">부서별번호</a>
+        <a href="#">브랜드담당자</a>
+    </div>
+  <header id="header"> 
+    <div class="inner_top">   
+        <h1 id="logo"><a href="index.html"><img src="image/ssaka_logo2.png" alt="로고"></a></h1>
+        <div class="header_right">
+            <p class="login">
+                <a href="#">회사소개</a><a href="#" id="login">로그인</a><a href="#">회원가입</a>
+            </p>
+            <div class="search">
+                <input type="text" id="search_box">
+                <button type="button" class="btn_search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>     
+    </div>
+    </header>
+    <!-- ************header끝******************* -->
+        <nav id="nav">
+            <div class="inner_top">
+            <ul class="gnb">                
+                <li><a href="#">축구</a>                    
+                    <div class="depth2_box">
+                        <div class="top2">
+                        <h3>축구</h3>
+                    <ul class="depth2">                        
+                        <li>축구화
+                            <ul class="depth3">
+                                <li><a href="#">성인축구화</a></li>
+                                <li><a href="#">성인풋살화</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>유니폼
+                            <ul class="depth3">
+                                <li><a href="#">전사유니폼</a></li>
+                                <li><a href="#">전사트레이닝</a></li>
+                                <li><a href="#">유니폼상의</a></li>
+                                <li><a href="#">유니폼하의</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>축구공
+                            <ul class="depth3">
+                                <li><a href="#">축구공</a></li>
+                                <li><a href="#">풋살공</a></li>
+                                <li><a href="#">스킬볼</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>축구양말
+                            <ul class="depth3">
+                                <li><a href="#">축구스타킹</a></li>
+                                <li><a href="#">스타킹튜브</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>축구용품
+                            <ul class="depth3">
+                                <li><a href="#">신가드</a></li>
+                                <li><a href="#">GK장갑</a></li>
+                                <li><a href="#">경기용품</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                    </ul><!--//depth2-->
+                </div><!--//top2-->
+                </div><!--//depth2_box-->                
+                </li>
+
+                <li><a href="#">트레이닝</a>
+                    <div class="depth2_box">
+                      <div class="top2">
+                    <ul class="depth2">
+                        <h3>트레이닝</h3>
+                        <li>트레이닝화
+                            <ul class="depth3">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">육상화</a></li>
+                                <li><a href="#">샌들</a></li>
+                                <li><a href="#">슬리퍼</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>트레이닝웨어
+                            <ul class="depth3">
+                                <li><a href="#">동계의류</a></li>
+                                <li><a href="#">트레이닝세트</a></li>
+                                <li><a href="#">바람막이</a></li>
+                                <li><a href="#">후드탑</a></li>
+                            </ul><!--//depth3-->
+                        </li>
+                        <li>기능성이너웨어
+                            <ul class="depth3">
+                                <li><a href="#">긴팔상의</a></li>
+                                <li><a href="#">반팔상의</a></li>
+                                <li><a href="#">민소매</a></li>
+                                <li><a href="#">타이즈</a></li>
+                            </ul><!--//depth3-->
+                        </li>                        
+                    </ul><!--//depth2-->
+                  </div><!--//top2-->
+                </div><!--//depth2_box-->
+                </li>                  
+                <li><a href="#">유소년</a>
+                    <div class="depth2_box">
+                        <div class="top2">
+                      <ul class="depth2">
+                          <h3>유소년</h3>
+                          <li>축구화
+                              <ul class="depth3">
+                                  <li><a href="#">아동축구화</a></li>
+                                  <li><a href="#">아동육상화</a></li>
+                                  <li><a href="#">아동풋살화</a></li>
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>트레이닝화
+                              <ul class="depth3">
+                                  <li><a href="#">운동화</a></li>
+                                  <li><a href="#">런닝화</a></li>  
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>유니폼
+                              <ul class="depth3">
+                                  <li><a href="#">긴팔상의</a></li>
+                                  <li><a href="#">반팔상의</a></li>
+                                  <li><a href="#">하의</a></li>
+                              </ul><!--//depth3-->
+                          </li>                        
+                          <li>트레이닝웨어
+                              <ul class="depth3">
+                                  <li><a href="#">트레이닝세트</a></li>
+                                  <li><a href="#">자켓</a></li>
+                                  <li><a href="#">후드탑</a></li>
+                                  <li><a href="#">티셔츠</a></li>             
+                              </ul><!--//depth3-->
+                          </li>                        
+                      </ul><!--//depth2-->
+                    </div><!--//top2-->
+                  </div><!--//depth2_box-->
+                </li>
+                <li><a href="#">여성</a>
+                    <div class="depth2_box">
+                        <div class="top2">
+                      <ul class="depth2">
+                          <h3>여성</h3>
+                          <li>트레이닝화
+                              <ul class="depth3">
+                                  <li><a href="#">운동화</a></li>
+                                  <li><a href="#">샌들</a></li>
+                                  <li><a href="#">슬리퍼</a></li>
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>트레이닝웨어
+                              <ul class="depth3">
+                                  <li><a href="#">트레이닝세트</a></li>
+                                  <li><a href="#">아우터</a></li>  
+                                  <li><a href="#">상의</a></li>  
+                                  <li><a href="#">하의</a></li>  
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>기능성웨어
+                              <ul class="depth3">
+                                  <li><a href="#">기능성세트</a></li>
+                                  <li><a href="#">상의</a></li>
+                                  <li><a href="#">레깅스</a></li>
+                                  <li><a href="#">스포츠브라</a></li>
+                              </ul><!--//depth3-->
+                          </li>              
+                      </ul><!--//depth2-->
+                    </div><!--//top2-->
+                  </div><!--//depth2_box-->
+                </li>
+                <li><a href="#">클럽별상품</a>
+                    <div class="depth2_box">
+                        <div class="top2">
+                      <ul class="depth2 club">
+                          <h3>클럽별상품</h3>
+                          <li><img src="image/amb1.jpg">                              
+                          </li>
+                          <li><img src="image/amb2.jpg">                              
+                          </li>
+                          <li><img src="image/amb3.svg">                              
+                          </li>
+                          <li><img src="image/amb4.jpg">                              
+                          </li>
+                          <li><img src="image/amb5.jpg">                              
+                          </li>
+                          <li><img src="image/amb6.jpg">                              
+                          </li>         
+                          <li><img src="image/amb7.jpg">                              
+                          </li>         
+                          <li><img src="image/amb8.jpg">                              
+                          </li>         
+                      </ul><!--//depth2-->
+                    </div><!--//top2-->
+                  </div><!--//depth2_box-->
+                </li>
+                <li><a href="#">스포츠</a>
+                    <div class="depth2_box">
+                        <div class="top2">
+                      <ul class="depth2">
+                          <h3>스포츠</h3>
+                          <li>선글라스
+                              <ul class="depth3">
+                                  <li><a href="#">트레이닝</a></li>
+                                  <li><a href="#">골프</a></li>
+                                  <li><a href="#">보드</a></li>
+                                  <li><a href="#">사이클</a></li>
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>스키
+                              <ul class="depth3">
+                                  <li><a href="#">상의</a></li>
+                                  <li><a href="#">하의</a></li>  
+                                  <li><a href="#">아우터</a></li>     
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>액세서리
+                              <ul class="depth3">
+                                  <li><a href="#">헬멧</a></li>
+                                  <li><a href="#">넥워머</a></li>
+                                  <li><a href="#">글러브</a></li>
+                              </ul><!--//depth3-->
+                          </li>              
+                      </ul><!--//depth2-->
+                    </div><!--//top2-->
+                  </div><!--//depth2_box-->
+                </li>
+                <li><a href="#">브랜드</a>
+                    <div class="depth2_box">
+                        <div class="top2">
+                      <ul class="depth2">
+                          <h3>브랜드</h3>
+                          <li>아디다스
+                              <ul class="depth3">
+                                  <li><a href="#">운동화</a></li>
+                                  <li><a href="#">의류</a></li>
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>나이키
+                              <ul class="depth3">
+                                  <li><a href="#">트레이닝</a></li>
+                                  <li><a href="#">아우터</a></li>  
+                                  <li><a href="#">신발</a></li>
+                              </ul><!--//depth3-->
+                          </li>
+                          <li>휠라
+                              <ul class="depth3">
+                                  <li><a href="#">의류</a></li>
+                                  <li><a href="#">신발</a></li>
+                              </ul><!--//depth3-->
+                          </li>              
+                          <li>뉴발란스
+                              <ul class="depth3">
+                                  <li><a href="#">운동화</a></li>
+                                  <li><a href="#">러닝화</a></li>
+                              </ul><!--//depth3-->
+                          </li>              
+                      </ul><!--//depth2-->
+                    </div><!--//top2-->
+                  </div><!--//depth2_box-->
+                </li>
+            </ul><!--//gnb-->
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <p class="info_text">이 사이트는 <span>대리점</span>을 위한 사이트입니다.</p>
+        </div>
+        </nav> 
+
+    <div class="inner">
+        <div class="category">
+            <p><a>HOME</a><a>축구</a><a href="#">축구화</a><a href="#">성인축구화</a></p>
+        </div>
+        <table border="1" id="table">
+            <tr>
+                <td class="all">전체보기(213)</td>
+                <td>나이키</td>
+                <td>퓨마</td>
+                <td>아디다스</td>
+                <td>팬텀</td>
+            </tr>
+            <tr>
+                <td>사일로</td>
+                <td>티엠포</td>
+                <td>에이스</td>
+                <td>마이티</td>
+                <td>엘리트</td>
+            </tr>            
+        </table>
+        <!-- =========category table============= -->
+
+        <section id="nike_best">
+        <h2>나이키 BEST</h2>
+        <ul class="nike_best2">
+            <li><div><img src="image/nike_best.jpg" alt=""></div>
+                <p class="name">나이키 Present 2.4 AG(1079301)</p><p class="price">209,000원</p></li>
+            <li><div><img src="image/nike_best.jpg" alt=""></div>
+                <p class="name">나이키 Present 2.4 AG(1079301)</p><p class="price">209,000원</p></li>
+            <li><div><img src="image/nike_best.jpg" alt=""></div>
+                <p class="name">나이키 Present 2.4 AG(1079301)</p><p class="price">209,000원</p></li>
+            <li><div><img src="image/nike_best.jpg" alt=""></div>
+                <p class="name">나이키 Present 2.4 AG(1079301)</p><p class="price">209,000원</p></li>
+        </ul>
+        </section>
+    <!--===========//nike_best=============  -->
+
+        <section id="sub_list">
+            <div class="title">
+                <h3>전체 (213)</h3><p class="list_new"><a href="#none">최신순</a></p>
+            </div>
+            <ul class="sub_list2">
+                <li><div><img src="image/nike_sub1.jpg" alt=""></div>
+                    <p class="name">나이키 Red&Black Edition G</p><p class="price">209,000원</p></li>
+                <li><div><img src="image/nike_sub1.jpg" alt=""></div>
+                    <p class="name">나이키 Red&Black Edition G</p><p class="price">209,000원</p></li>
+                <li class="hide"><div><img src="image/nike_sub1.jpg" alt=""></div>
+                    <p class="name">나이키 Red&Black Edition G</p><p class="price">209,000원</p></li>
+                <li class="hide"><div><img src="image/nike_sub1.jpg" alt=""></div>
+                    <p class="name">나이키 Red&Black Edition G</p><p class="price">209,000원</p></li>
+
+                <li><div><img src="image/nike_sub2.jpg" alt=""></div>
+                    <p class="name">나이키 Pink&Yellow Edition G</p><p class="price">209,000원</p></li>
+                <li><div><img src="image/nike_sub2.jpg" alt=""></div>
+                    <p class="name">나이키 Pink&Yellow Edition G</p><p class="price">209,000원</p></li>
+                <li class="hide"><div><img src="image/nike_sub2.jpg" alt=""></div>
+                    <p class="name">나이키 Pink&Yellow Edition G)</p><p class="price">209,000원</p></li>
+                <li class="hide"><div><img src="image/nike_sub2.jpg" alt=""></div>
+                    <p class="name">나이키 Pink&Yellow Edition G</p><p class="price">209,000원</p></li>
+
+                <li><div><img src="image/nike_sub3.jpg" alt=""></div>
+                    <p class="name">나이키 BlueSky Edition G</p><p class="price">209,000원</p></li>                    
+                <li><div><img src="image/nike_sub3.jpg" alt=""></div>
+                    <p class="name">나이키 BlueSky Edition G</p><p class="price">209,000원</p></li>                    
+                <li class="hide"><div><img src="image/nike_sub3.jpg" alt=""></div>
+                    <p class="name">나이키 BlueSky Edition G</p><p class="price">209,000원</p></li>                    
+                <li class="hide"><div><img src="image/nike_sub3.jpg" alt=""></div>
+                    <p class="name">나이키 BlueSky Edition G</p><p class="price">209,000원</p></li>                    
+            </ul>
+            <p class="number">
+                <a><b>1</b></a>
+                <a>2</a>
+                <a>3</a>
+            </p>
+        </section>
+    </div><!--//inner-->
+    <!--========//sub_list================ -->
+    
+    <footer id="footer">        
+        <div class="inner">
+        <div class="callcenter">
+            <p class="title"><i class="fa-solid fa-headset"></i> 고객센터</p>
+            <p><span>1833-2337</span><br>
+            평일 오전 09:30 ~ 오후 05:00<br>
+            점심 오후 13:30 ~ 오후 14:30<br>
+            휴무 토,일요일,공휴일 휴무<br><br>
+            (주)싸카스포츠</p>
+        </div>
+            <div class="line1"><span></span> </div>
+        <div class="bank_info">
+            <p class="title"><i class="fa-solid fa-money-check"></i> 은행정보</p>
+            <p>거래처 세금계산서 전용<br>
+            하나은행 348 - 910001 - 95004<br>
+            예금주 (주)싸카스포츠<br><br>
+            하나은행 348 - 910002 - 35404<br>
+            예금주 (주)싸카스포츠
+            </p>
+        </div>
+            <div class="line2"><span></span> </div>
+        <div class="company_info">
+            <p class="title"><i class="fa-solid fa-circle-info"></i> 회사정보</p>
+            <p>
+                회사명 : (주)싸카스포츠 대표 : 김유상<br>
+                주소 : 부산광역시 초월읍 산수로 378-11<br>
+                대표전화: 1833-2337 팩스: 02-2084-3133<br>
+                개인정보책임관리 : 김유상<br>
+                사업자등록번호 : 314-81-42567<br>
+                통신판매업신고 제2019-경기광주-1204호<br>
+            </p>
+        </div>            
+    </div>
+    <p class="copyright">Coypyright 2022 ⓒ (주)싸카스포츠. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
