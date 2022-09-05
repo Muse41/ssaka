@@ -9,6 +9,9 @@
     font-size:1.7rem;
     font-weight: 400;
 }
+.inner .text{
+    color:#011;    
+}
 
 #company{
     color:#27409A;
