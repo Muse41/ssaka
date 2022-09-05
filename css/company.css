@@ -1,0 +1,98 @@
+.inner h2{
+    font-size:2.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin:95px 0;
+}
+.inner h3{
+    color:#27409A;
+    font-size:1.7rem;
+    font-weight: 400;
+}
+
+#company{
+    color:#27409A;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.sec1 p, .sec1 h3{
+    text-align: center;
+}
+.sec1 .text{
+    margin:50px 0;
+    font-size:1.2rem;
+}
+.sec1 p img{
+    width:1440px;
+    height:600px;
+    margin-bottom: 40px;
+}
+
+.sec2{
+    margin-top:125px;
+    display:flex;
+    justify-content: space-between;    
+}
+.sec2 > div{
+    width:calc(50% - 70px);
+    padding-top:40px;
+}
+.sec2 .img_box{
+    width:calc(50% - 25px);
+}
+.sec2 .img_box img{
+    width:700px;
+    height:466px;
+}
+.sec2 .text{
+    margin:50px 0;
+    font-size:1.2rem;
+}
+
+.sec3{
+    display:flex;
+    justify-content: space-between;
+    margin-top:95px;
+}
+.sec3 > div{
+    width:calc(50% - 70px);
+    padding-top:40px;
+}
+.sec3 .img_box{
+    width:calc(50% - 25px);
+}
+.sec3 .img_box img{
+    width:700px;
+    height:466px;
+}
+.sec3 .text{
+    margin:50px 0;
+    font-size:1.2rem;
+}
+
+.sec4{
+    margin-top:125px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: #f4f8fd;
+    padding:130px 0;
+    padding-bottom: 160px;
+} 
+.sec4 p img{
+    width:1000px;
+    height:666px;
+}
+.sec4 .text{   
+    margin:60px 0;
+    font-size:1.2rem;
+    text-align: center;
+}
+.sec4 h3{
+    text-align:center;    
+}
+
+#footer .inner{
+    margin-top:0px;
+}

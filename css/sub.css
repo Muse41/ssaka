@@ -163,6 +163,17 @@ ul.sub_list2 li img{
 ul.sub_list2 li img:hover{
     transform:scale(1.15);
 }
+
+
+#nav .gnb > li.gnb_li > a{
+    color:#27409A;
+    text-decoration: underline;
+}
+.gnb .depth3 li.depth3_li a{
+    color:#27409A;
+    border-bottom: 1px solid #27409A;
+}
+
 /* ************************************ */
 
 @media all and (max-width:720px){
