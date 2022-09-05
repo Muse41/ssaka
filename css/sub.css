@@ -173,6 +173,12 @@ ul.sub_list2 li img:hover{
     color:#27409A;
     border-bottom: 1px solid #27409A;
 }
+#company{
+    color:#27409A;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
 
 /* ************************************ */
 
