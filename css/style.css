@@ -614,6 +614,21 @@ ul.best_product2{
 }
   /* **********팝업창******************* */
 
+  #nav .gnb > li.gnb_li > a{
+    color:#27409A;
+    text-decoration: underline;
+}
+.gnb .depth3 li.depth3_li a{
+    color:#27409A;
+    border-bottom: 1px solid #27409A;
+}
+#company{
+    color:#27409A;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+
 
 @media all and (max-width:720px){
     #header_top{    
@@ -621,8 +636,8 @@ ul.best_product2{
     }
     #header_top a{  
         display:inline-block;  
-        padding:10px 15px;
-        width:98px; 
+        width:90px;
+        padding:10px 20px; 
     }
     #logo{
         margin-top:20px;
