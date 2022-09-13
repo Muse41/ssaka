@@ -175,22 +175,22 @@
     margin-right:80px; 
 }
 /* ****************depth2.club 부분****************** */
-#nav .gnb .depth2.club{
-    display:flex;
-    flex-wrap:wrap;
-    width:45%;
+#nav .gnb .club{
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(4, 75px);
+    gap: 10px; /* 박스사이 여백 */
+    grid-template-areas:
+           'area1 area2 area3 area4'
+           'area5 area6 area7 area8';
+    grid-template-rows: 75px 75px;
 }
-#nav .gnb .depth2.club li{
-   margin-right: 10px;
-   margin-bottom: 20px;
-}
-#nav .gnb .depth2.club li img{
-    width:80px;
+
+#nav .gnb .depth2 .club li img{
+    width:75px;
     cursor: pointer;
 }
-#nav .gnb .depth2.club li:nth-of-type(5){
-    margin-left:170px;
-}
+
 /* ****************depth2.club 부분****************** */
 
 .gnb .depth3{
@@ -646,35 +646,110 @@ ul.best_product2{
     position:absolute;
     width:100%; height:100%;
     background-color: rgba(0,0,0,0.5);
-    left:0; top:0;
+    left:-100%; top:0;
     z-index:99999;
-    display:none;
 }
 #nav_pop .panel{
 	display: none;
 }
 #nav_pop .tabSet{
     background-color: rgba(255,255,255,1);
-    max-width:700px;
+    max-width:580px;
     height:100%;
     display:flex;
 }
 #nav_pop .panels{
-    background-color: #ccc;
-    width:calc(100% - 300px);
+    background-color: #ededed;
+    width:calc(100% - 140px);
+    position:relative;
 }
 #nav_pop .tabs{
-    width:300px;
+    width:140px;
 }
-#btn1 > li{
-    color:red;
+.tabs{
+    padding:15px;
 }
-#btn1 .sub{
+.tabs a{
+    display:inline-block;
+    padding-bottom: 15px;
+    font-size:1.2rem;    
+}
+.tabs a::after{
+    margin-top:3px;
+    content: "";
+    background-color:#27409A;    
+    display: block;
+    width:100%;    
+    transform: scale(0);
+    height: 2px;   
+    z-index: 99999;
+    transition-duration: 0.3s;
+}
+.tabs a.on::after{  
+    transform: scale(1);
+}
+
+.panel #btn1 > li{
+    font-size:1.1rem;
+    padding: 10px 0;
+    font-weight: 400;      
+    color:#444; 
+     
+}
+.panel #btn1.club > li a{
+    border:none;
+}
+
+.panel #btn1 > li a{
+    margin-left:12px;
+    border-bottom: 1px solid #444;
+    width:140px;
+    display:inline-block;
+    padding-bottom: 10px;
+    padding-left: 7px;    
+}
+.panel #btn1 > li .sub li a{
+    border:none;
+}
+.panel #btn1 > li .sub li:first-child a{
+    margin-top:10px;
+}
+.panel #btn1 > li.link_on{
+    color:#27409A;
+}
+.panel #btn1 > li.link_on .sub li{
+    color:#444;
+}
+
+.panel #btn1 .sub{
     display:none;
 }
-#btn1 .sub li{
-    color:black;
+.panel #btn1 .sub > li{
+    font-weight: 300;
+    font-size:1rem;
+    padding-bottom: 5px; 
 }
+
+.panel #btn1 > li.link_on .sub .sub_li{
+    color:#27409A;
+    text-decoration: underline;
+}
+
+#panel1-5 .club{
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(4, 70px);
+    gap: 7px; /* 박스사이 여백 */
+    grid-template-areas:
+           'area1 area2 area3 area4'
+           'area5 area6 area7 area8';
+    grid-template-rows: 70px 70px;    
+}
+#panel1-5 .club li img{
+    width:75px;   
+}
+
+
 /* ***************내비 팝업*************************** */
 
 
@@ -716,7 +791,8 @@ ul.best_product2{
     #bars{display: inline-block;
         margin-top:37px;
         margin-left:10px;
-    font-size: 1.2rem;
+        margin-bottom:10px;
+    font-size: 1.3rem;
     cursor:pointer;
 }
     .info_text{ margin-left:auto;
@@ -791,8 +867,9 @@ ul.best_product2{
     }
  
     #new_product ul.list_product{
-        margin:0 auto;
-        display: grid; width:93%; 
+        margin:0 10px;
+        display: grid;
+        /* width:100%;  */
              grid-template-columns: repeat(2, 1fr);
              gap: 60px 30px; /* 박스사이 여백 */
              grid-template-areas:
@@ -828,8 +905,9 @@ ul.best_product2{
     margin-top:50px;
 }
 ul.best_product2{
-    margin:auto;
-    display: grid; width:93%;
+    margin:0 10px;
+    display: grid;
+    /* width:100%; */
     grid-template-columns: repeat(2,1fr);
     gap: 60px 30px; /* 박스사이 여백 */
     grid-template-areas:

@@ -116,7 +116,7 @@
                 <li class="gnb_li"><a href="#">축구</a>                    
                     <div class="depth2_box">
                         <div class="top2">
-                        <h3>축구</h3>
+                        <h3>축구</h3> 
                     <ul class="depth2">                        
                         <li>축구화
                             <ul class="depth3">
@@ -158,10 +158,12 @@
                 </li>
 
                 <li><a href="#">트레이닝</a>
+                    
                     <div class="depth2_box">
                       <div class="top2">
-                    <ul class="depth2">
                         <h3>트레이닝</h3>
+                    <ul class="depth2">
+                        
                         <li>트레이닝화
                             <ul class="depth3">
                                 <li><a href="#">운동화</a></li>
@@ -193,8 +195,9 @@
                 <li><a href="#">유소년</a>
                     <div class="depth2_box">
                         <div class="top2">
+                            <h3>유소년</h3>
                       <ul class="depth2">
-                          <h3>유소년</h3>
+                          
                           <li>축구화
                               <ul class="depth3">
                                   <li><a href="#">아동축구화</a></li>
@@ -230,8 +233,9 @@
                 <li><a href="#">여성</a>
                     <div class="depth2_box">
                         <div class="top2">
+                            <h3>여성</h3>
                       <ul class="depth2">
-                          <h3>여성</h3>
+                          
                           <li>트레이닝화
                               <ul class="depth3">
                                   <li><a href="#">운동화</a></li>
@@ -262,33 +266,36 @@
                 <li><a href="#">클럽별상품</a>
                     <div class="depth2_box">
                         <div class="top2">
-                      <ul class="depth2 club">
-                          <h3>클럽별상품</h3>
-                          <li><img src="image/amb1.jpg">                              
+                            <h3>클럽별상품</h3>
+                      <div class="depth2">
+                        <ul class="club">
+                          <li class="a1"><img src="image/amb1.jpg">                              
                           </li>
-                          <li><img src="image/amb2.jpg">                              
+                          <li class="a2"><img src="image/amb2.jpg">                              
                           </li>
-                          <li><img src="image/amb3.svg">                              
+                          <li class="a3"><img src="image/amb3.svg">                              
                           </li>
-                          <li><img src="image/amb4.jpg">                              
+                          <li class="a4"><img src="image/amb4.jpg">                              
                           </li>
-                          <li><img src="image/amb5.jpg">                              
+                          <li class="a5"><img src="image/amb5.jpg">                              
                           </li>
-                          <li><img src="image/amb6.jpg">                              
+                          <li class="a6"><img src="image/amb6.jpg">                              
                           </li>         
-                          <li><img src="image/amb7.jpg">                              
+                          <li class="a7"><img src="image/amb7.jpg">                              
                           </li>         
-                          <li><img src="image/amb8.jpg">                              
+                          <li class="a8"><img src="image/amb8.jpg">                              
                           </li>         
-                      </ul><!--//depth2-->
+                        </ul><!--//club-->
+                        </div>
                     </div><!--//top2-->
                   </div><!--//depth2_box-->
                 </li>
                 <li><a href="#">스포츠</a>
                     <div class="depth2_box">
                         <div class="top2">
+                            <h3>스포츠</h3>
                       <ul class="depth2">
-                          <h3>스포츠</h3>
+                         
                           <li>선글라스
                               <ul class="depth3">
                                   <li><a href="#">트레이닝</a></li>
@@ -318,8 +325,9 @@
                 <li><a href="#">브랜드</a>
                     <div class="depth2_box">
                         <div class="top2">
+                            <h3>브랜드</h3>
                       <ul class="depth2">
-                          <h3>브랜드</h3>
+                          
                           <li>아디다스
                               <ul class="depth3">
                                   <li><a href="#">운동화</a></li>
@@ -353,87 +361,262 @@
 
         </nav> 
         <!-- ***************nav 끝****************** -->
+
         <p class="info_text">이 사이트는 <span>대리점</span>을 위한 사이트입니다.</p>
     </div>
     </header>
     <!-- ************header끝******************* -->
-      
-  
+        
         <i class="fa-solid fa-bars" id="bars"></i>
+
 
         <div id="nav_pop">
             <div class="tabSet">
                 <ul class="tabs">
-                    <li><a href="#panel1-1" class="on">panel 1</a></li>
-                    <li><a href="#panel1-2">panel 2</a></li>
-                    <li><a href="#panel1-3">panel 3</a></li>
-                    <li><a href="#panel1-4">panel 4</a></li>
+                    <li><a href="#panel1-1" class="on">축구</a></li>
+                    <li><a href="#panel1-2" class="">트레이닝</a></li>
+                    <li><a href="#panel1-3" class="">유소년</a></li>
+                    <li><a href="#panel1-4" class="">여성</a></li>
+                   <li><a href="#panel1-5" class="">클럽별상품</a></li>
+                    <li><a href="#panel1-6" class="">스포츠</a></li>
+                    <li><a href="#panel1-7" class="">브랜드</a></li>
                 </ul>
                 <div class="panels">
+                  <button class="close"><span></span>
+                    <span></span></button>
                     <div class="panel" id="panel1-1">
-                        <div id="wrap_head">
-                            <ul  id="btn1">
-                             <li><a href="#">
-                               이용안내</a>
+                            <ul id="btn1"> <!--축구-->
+                             <li class=""><a href="#">축구화</a>
                                <ul class="sub">
-                                 <li><a href="#"> 운영시간/이용요금</a></li>
-                                 <li><a href="#"> 제휴할인</a></li>
-                                 <li><a href="#"> 온라인 기프트샵</a></li>
-                                 <li><a href="#"> 할인쿠폰</a></li>
-                                 <li><a href="#"> 연간이용권 안내</a></li>
-                                 <li><a href="#"> 단체안내</a></li>
-                                 <li><a href="sub.html">찾아오시는 길</a></li>
-                                 <li><a href="#"> 주변 관광 안내</a></li>
+                                 <li class="sub_li"><a href="sub.html">성인축구화</a></li>
+                                 <li><a href="#">성인풋살화</a></li>   
+                               </ul>
+                             </li>        
+
+                             <li class=""><a href="#">
+                               유니폼</a>
+                               <ul class="sub">
+                                 <li><a href="#">전사유니폼</a></li>
+                                 <li><a href="#">전사트레이닝</a></li>
+                                 <li><a href="#">유니폼상의</a></li>
+                                <li> <a href="#">유니폼하의</a></li>
                                </ul>
                              </li>
                           
                              <li class=""><a href="#">
-                               프로그램</a>
+                               축구공</a>
                                <ul class="sub">
-                                 <a href="#"><li>  프로그램 스케줄</a></li>
-                                 <a href="#"><li> 프로그램 소개</a></li>
-                               </ul>
-                             </li>
-                          
-                             <li class=""><a href="#">
-                               이벤트</a>
-                               <ul class="sub">
-                                 <li><a href="#"> 이벤트</a></li>
-                                 <li><a href="#"> 아쿠아친구들 공부하기</a></li>
-                                 <li><a href="#"> 아쿠아 다이어리</a></li>
+                                 <li><a href="#">축구공</a></li>
+                                 <li><a href="#">풋살공</a></li>
+                                 <li><a href="#">스킬볼</a></li>
                                </ul>
                              </li>
                           
                               <li class=""><a href="#">
-                               아쿠아플라넷 소개</a>
+                               축구양말</a>
                                <ul class="sub">
-                                 <li><a href="#"> AQUA On-Air</a></li>
-                                 <li><a href="#"> 아쿠아플라넷 친구들</a></li>
-                                 <li><a href="#"> 전시관 안내</a></li>
-                                 <li><a href="#"> 부대시설</a></li>
-                                 <li><a href="#"> 해양생물 지킴이</a></li>
+                                 <li><a href="#">축구스타킹</a></li>
+                                 <li><a href="#">스타킹튜브</a></li>
                                </ul>
-                             </li>
-                          
+                             </li>                         
                           
                              <li class=""><a href="#">
-                               고객의 소리</a>
-                               <ul class="sub">
-                                 <li><a href="#"> FAQ</a></li>
-                                 <li><a href="#"> 공지사항</a></li>
-                                 <li><a href="#"> 고객센터</a></li>
-                               </ul>
-                             </li>
-                             </ul>
-                            </div> 
+                                축구용품</a>
+                                <ul class="sub">
+                                  <li><a href="#">신가드</a></li>
+                                  <li><a href="#">GK장갑</a></li>
+                                  <li><a href="#">경기용품</a></li>
+                                </ul>
+                              </li>       
+                        </ul>                            
                     </div>
-                    <div class="panel" id="panel1-2">2.</div>
-                    <div class="panel" id="panel1-3">3.</div>
-                    <div class="panel" id="panel1-4">4.</div>
-                <!-- /panels --></div>
-            <!-- /tabset --></div>
+
+                    <div class="panel" id="panel1-2">
+                        <ul  id="btn1"> <!--트레이닝-->
+                            <li><a href="#">
+                              트레이닝화</a>
+                              <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">육상화</a></li>
+                                <li><a href="#">샌들</a></li>
+                                <li><a href="#">슬리퍼</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              트레이닝웨어</a>
+                              <ul class="sub">
+                                <li><a href="#">동계의류</a></li>
+                                <li><a href="#">트레이닝세트</a></li>
+                                <li><a href="#">바람막이</a></li>
+                                <li><a href="#">후드탑</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              기능성이너웨어</a>
+                              <ul class="sub">
+                                <li><a href="#">긴팔상의</a></li>
+                                <li><a href="#">반팔상의</a></li>
+                                <li><a href="#">민소매</a></li>
+                                <li><a href="#">타이즈</a></li>
+                              </ul>
+                            </li>
+                         </ul>   
+                    </div>
+
+                    <div class="panel" id="panel1-3">
+                        <ul  id="btn1"> <!--유소년-->
+                            <li><a href="#">
+                              축구화</a>
+                              <ul class="sub">
+                                <li><a href="#">아동축구화</a></li>
+                                <li><a href="#">아동육상화</a></li>
+                                <li><a href="#">아동풋살화</a></li>  
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              트레이닝화</a>
+                              <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">런닝화</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              유니폼</a>
+                              <ul class="sub">
+                                <li><a href="#">긴팔상의</a></li>
+                                <li><a href="#">반팔상의</a></li>
+                                <li><a href="#">하의</a></li>  
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              트레이닝웨어</a>
+                              <ul class="sub">
+                                <li><a href="#">트레이닝세트</a></li>
+                                <li><a href="#">자켓</a></li>
+                                <li><a href="#">후드탑</a></li>  
+                                <li><a href="#">티셔츠</a></li>  
+                              </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="panel" id="panel1-4">
+                        <ul  id="btn1"> <!--여성-->
+                            <li><a href="#">
+                              트레이닝화</a>
+                              <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">샌들</a></li>
+                                <li><a href="#">슬리퍼</a></li>  
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              트레이닝웨어</a>
+                              <ul class="sub">
+                                <li><a href="#">트레이닝세트</a></li>
+                                <li><a href="#">아우터</a></li>
+                                <li><a href="#">상의</a></li>
+                                <li><a href="#">하의</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              기능성웨어</a>
+                              <ul class="sub">
+                                <li><a href="#">기능성세트</a></li>
+                                <li><a href="#">상의</a></li>
+                                <li><a href="#">레깅스</a></li>  
+                                <li><a href="#">스포츠브라</a></li>  
+                              </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="panel" id="panel1-5">
+                   <ul  id="btn1" class="club"><!--클럽별상품-->
+                            <li class="a1"><a href="#"><img src="image/amb1.png"></a>                              
+                            </li>
+                            <li class="a2"><a href="#"><img src="image/amb2.png"></a>              
+                            </li>
+                            <li class="a3"><a href="#"><img src="image/amb3.svg"></a>                              
+                            </li>
+                            <li class="a4"><a href="#"><img src="image/amb4.jpg"></a>                              
+                            </li>
+                            <li class="a5"><a href="#"><img src="image/amb5.jpg"></a>                              
+                            </li>
+                            <li class="a6"><a href="#"><img src="image/amb6.jpg"></a>                              
+                            </li>         
+                            <li class="a7"><a href="#"><img src="image/amb7.png"></a>                              
+                            </li>         
+                            <li class="a8"><a href="#"><img src="image/amb8.png"></a>                              
+                            </li>
+                        </ul>
+                      </div>   
+                    
+                    <div class="panel" id="panel1-6">
+                        <ul  id="btn1"> <!--스포츠-->
+                            <li><a href="#">
+                              선글라스</a>
+                              <ul class="sub">
+                                <li><a href="#">트레이닝</a></li>
+                                <li><a href="#">골프</a></li>
+                                <li><a href="#">보드</a></li>  
+                                <li><a href="#">사이클</a></li>  
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              스키</a>
+                              <ul class="sub">
+                                <li><a href="#">상의</a></li>
+                                <li><a href="#">하의</a></li>
+                                <li><a href="#">아우터</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              액세서리</a>
+                              <ul class="sub">
+                                <li><a href="#">헬멧</a></li>
+                                <li><a href="#">넥워머</a></li>
+                                <li><a href="#">글러브</a></li>   
+                              </ul>
+                            </li>
+                        </ul>   
+                    </div>
+
+                    <div class="panel" id="panel1-7">
+                        <ul  id="btn1"> <!--브랜드-->
+                            <li><a href="#">
+                              아디다스</a>
+                              <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">의류</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              나이키</a>
+                              <ul class="sub">
+                                <li><a href="#">트레이닝</a></li>
+                                <li><a href="#">아우터</a></li>
+                                <li><a href="#">신발</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              휠라</a>
+                              <ul class="sub">
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">신발</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">
+                              뉴발란스</a>
+                              <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">러닝화</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>
                 
-        </div>
+                </div><!-- /panels -->
+            </div><!--tabSet -->                
+        </div><!--nav_pop-->
         <!-- ****************nav_pop************** -->
 
 
