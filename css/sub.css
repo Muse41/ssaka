@@ -179,7 +179,6 @@ ul.sub_list2 li img:hover{
     font-weight: 400;
 }
 
-
 /* ************************************ */
 
 @media all and (max-width:720px){
@@ -195,12 +194,16 @@ ul.sub_list2 li img:hover{
         margin:50px 0px;    
     }
     .nike_best2{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 5px; /* 박스사이 여백 */
+        grid-template-areas:
+               'area1 area2'
+               'area3 area4';
+        grid-template-rows: repeat(2,1fr);
     }
     ul.nike_best2 li{
-        margin:0 5px 20px 5px;
+        margin:0 10px;
     }
     ul.nike_best2 li .name{
         margin-top:5px;    
@@ -209,7 +212,7 @@ ul.sub_list2 li img:hover{
         margin-left:5px;
     }
     ul.nike_best2 li img{
-        width:230px;
+        width:100%;
     }
  /* *************nike best******************** */
 
@@ -219,15 +222,20 @@ ul.sub_list2 li img:hover{
 
     ul.sub_list2{
         margin-top:50px;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 5px; /* 박스사이 여백 */
+        grid-template-areas:
+               'area1 area2'
+               'area3 area4'
+               'area5 area6';
+        grid-template-rows: repeat(3,1fr);
     }
     ul.sub_list2 li{
-        margin:0 5px 20px 5px;
+        margin:10px;
     }
     ul.sub_list2 li img{
-        width:230px;
+        width:100%;
     }
     ul.sub_list2 li .name{
         margin-top:5px;    

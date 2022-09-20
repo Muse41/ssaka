@@ -651,10 +651,13 @@ ul.best_product2{
     z-index:99999;
 }
 #nav_pop .header_pop{
-    height:150px;
+    position:relative;  /*닫기 버튼 위치 지정 위한 포지션*/
+    max-width:580px;
+    height:130px;
     background-color: #fff;
     display:flex;
     align-items: center;
+    border-bottom: 1px solid #dedede;
 }
 #nav_pop .header_pop #logo{
     margin-top: -20px;
@@ -662,6 +665,7 @@ ul.best_product2{
 }
 #nav_pop .panel{
 	display: none;
+    margin-top:5px;
 }
 #nav_pop .tabSet{
     background-color: rgba(255,255,255,1);
@@ -671,8 +675,7 @@ ul.best_product2{
 }
 #nav_pop .panels{
     background-color: #ededed;
-    width:calc(100% - 170px);    
-    position:relative;
+    width:calc(100% - 170px);      
 }
 #nav_pop .tabs{
     width:200px;
@@ -765,6 +768,9 @@ ul.best_product2{
 
 
 @media all and (max-width:720px){
+    .inner_top2{
+        width:calc(100% - 20px);
+    }
     #header_top{    
         padding-left:0px;
     }
@@ -774,24 +780,23 @@ ul.best_product2{
         padding:10px 15px; 
     }
     #logo{
-        margin-top:20px;
+        margin-top:0px;
     }
     #logo img{
         width:100px;
     }
-    #header{
-        margin:0 10px;
-    }
+   
     .header_right .login a{
         padding-right: 10px;
     }
     #search_box{
-        width:120px;
-        padding:0 15px; 
-        margin-right: 20px;    
+        width:140px;
+        padding:0 10px; 
+        margin-right: 10px;    
+        box-sizing: border-box;
     }
     .btn_search{        
-        right:30px;
+        right:20px;
     }
     .header_right{
         margin-top:20px;
@@ -806,19 +811,19 @@ ul.best_product2{
     font-size: 1.3rem;
     cursor:pointer;
 }
-    .info_text{ margin-left:auto;
-    margin-right:10px;  margin-bottom: 20px;
+    .info_text{    
+    margin-top: 25px;
     font-size:0.95rem;
 }
     .slick-prev{
         width:15px;
-        top:530px;
+        top:400px;
         left: 15px;  
         background: url('../image/angle-left-solid_b.svg') no-repeat;     
     }
     .slick-next{
         width:15px;
-        top:530px;
+        top:400px;
         right:15px; 
         background: url('../image/angle-right-solid_b.svg') no-repeat;
     }
@@ -832,6 +837,9 @@ ul.best_product2{
         width:13px;
         height:13px; 
     }
+    .slick-slide img{
+        width:100%;
+    }
     /* ************메인슬라이드****************** */
 
     #information .inner{
@@ -843,8 +851,11 @@ ul.best_product2{
     .info_box:first-child{    
         margin-bottom:20px;
     }
+    .info_box{
+        width:calc(100% - 20px);
+    }
     .info_box img{
-        width:550px;
+        width:100%;
     }
     .info_box p{
         position:absolute;
@@ -854,18 +865,21 @@ ul.best_product2{
         font-size:1rem;
         font-weight: 300;
     }
+
     #uniform_banner{
         margin-top:50px;    
         display:flex;
         justify-content: center;
+        width:calc(100% - 20px);
     }
     #uniform_banner img{
-        width:550px;
+        width:100%;
     }
     /* **************카탈로그, 유니폼주문배너***************** */
 
     #new_product .inner{
         margin-top:50px;
+        width:calc(100% - 20px);
     }
     #new_product .text_box{
         margin-left: 0px;
@@ -873,21 +887,19 @@ ul.best_product2{
     #new_product .text_box .title{
         font-size:45px;
         /* font-weight: 100; */
-        /* line-height: 3.8rem; */
-        margin-bottom: 50px;
+        line-height: 3.3rem;
+        margin-bottom: 55px;
     }
  
     #new_product ul.list_product{
-        margin:0 10px;
-        display: grid;
-        /* width:100%;  */
+          display: grid;
              grid-template-columns: repeat(2, 1fr);
-             gap: 60px 30px; /* 박스사이 여백 */
+             gap: 40px 30px; /* 박스사이 여백 */
              grid-template-areas:
                     'area1 area2' 
                     'area3 area4'
                     'area5 area6'; /*세줄이니까 */
-             grid-template-rows: 230px 230px 230px;/* 여기서도 값이 세개*/
+             grid-template-rows: repeat(3, 1fr);/* 여기서도 값이 세개*/
     }
     #new_product ul.list_product .a7{display:none;}
 
@@ -895,43 +907,39 @@ ul.best_product2{
         margin-left:0px;
     }
     #new_product .list_product li img{
-        width:230px;
+        width:100%;
     }
-    #new_product .list_product li{
-        width:230px;
-    }
+
 /* ***************NEW ************************ */
 
 #banner2{
     margin-top:80px;    
     display:flex;
     justify-content: center;
+    width:calc(100% - 20px);
 }
 #banner2 img{
-    width:550px;
+    width:100%;
 }
 /* ************중간배너2*********************** */
 
 #best_product .inner{
     margin-top:50px;
+    width:calc(100% - 20px);
 }
 ul.best_product2{
-    margin:0 10px;
     display: grid;
-    /* width:100%; */
     grid-template-columns: repeat(2,1fr);
-    gap: 60px 30px; /* 박스사이 여백 */
+    gap: 40px 30px; /* 박스사이 여백 */
     grid-template-areas:
            'area1 area2'
            'area3 area4';
-    grid-template-rows: 230px 230px;
+    grid-template-rows: repeat(2,1fr);
 }
 ul.best_product2 li img{
-    width:230px;
+    width:100%;
 }
-ul.best_product2 li{
-    width:230px;
-}
+
 .best_top{
     display:block;
 }
@@ -947,10 +955,11 @@ ul.best_product2 li{
 }
 /* ************BEST********************** */
 
-#notice .inner{   
+#notice .inner{  
+    width:calc(100% - 20px); 
     display:flex;
     flex-wrap:wrap;
-    margin:100px 10px 0 10px;
+    margin-top:100px;
 }
 #notice .title_box h2{
     font-size:45px;
@@ -961,7 +970,7 @@ ul.best_product2 li{
 }
 .content{     
     width:100%;
-    margin-right:10px;
+    margin-right:0px;
  }
  .content div{    
      display:flex;    
@@ -975,11 +984,10 @@ ul.best_product2 li{
  }
 /* ***********공지사항********************* */
 
-#footer .inner{
+#footer .inner{    
     margin-top:50px;
-    padding-top:30px;    
-    display:flex;   
-    align-items:flex-start;
+    padding-top:20px;    
+    display:block;
     font-size:1rem;    
 }
 #footer .title{
@@ -997,8 +1005,20 @@ ul.best_product2 li{
     margin-left:-20px;
 }
 .callcenter, .bank_info, .company_info{
-    width:30%;
+    text-align:center;
+    width:100%;
     padding:0 10px;
+    box-sizing: border-box;
+}
+#footer .line1, .line2, .line3{
+    margin:20px 0;
+    padding:0 40px;  
+}
+#footer .line1 span, #footer .line2 span{
+    width:100%;
+    height:1px;
+    background-color: #bbb;
+    display:block;        
 }
 /* *************푸터********************* */
 
