@@ -25,7 +25,7 @@ $(function(){
         $('#nav_pop').animate({left:'0'},400);
     })
 
-    $('.panels .close').click(function(){
+    $('.header_pop .close').click(function(){
         $('#nav_pop').animate({left:'-100%'},400); //%나 px같이 단위 들어갈땐 반드시 ' ' 따옴표를 붙여야 함!!
     })
 
