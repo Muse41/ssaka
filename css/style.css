@@ -1020,6 +1020,10 @@ ul.best_product2 li img{
     background-color: #bbb;
     display:block;        
 }
+
+#pop_up{
+    display:none;
+}
 /* *************푸터********************* */
 
 }
