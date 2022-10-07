@@ -22,24 +22,20 @@
 <script src="js/nav.js"></script>
 <script src="js/tab.js"></script>
 <script>
-    $(function(){ //한번만 나오면 되
-
-      $('#login_popup .close').click(function(){
-        $('#login_popup').fadeOut(300);
-      })
-      $('.login #login').click(function(){
-        $('#login_popup').fadeIn(300);
-      })
-/*    })
-여긴삭제   왜냐하면 제이쿼리의 바디가 두번 쓰는거랑 같아요 
-    $(function(){  */
-    $('#pop_up .close').click(function(){
+    $(function(){ 
+      $('#pop_up .close').click(function(){
       $('#pop_up').fadeOut(300);
     })
-    /*$('#pop_up').click(function(){
-        //여기는 팝업창 아무곳이나 클릭하면 열리는거니까 없애도 되
-      $('#pop_up').fadeIn(400);
-    })*/
+
+      $('#login_popup .close').click(function(event){
+        $('#login_popup').fadeOut(300);
+        event.preventDefault();
+      })
+      $('.login #login').click(function(event){
+        $('#login_popup').fadeIn(300);
+        event.preventDefault();
+      })
+      
     })
 </script>
 </head>
